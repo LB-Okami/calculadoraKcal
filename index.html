@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de Kcal</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="calculator">
         <h1>Calculadora de Kcal</h1>
-        <label for="kcalInput">Digite a quantidade de Kcal:</label>
-        <input type="text" id="kcalInput">
-        <button id="calcularButton">Calcular</button>
-        <p id="resultado"></p>
+        <label for="kcalInput">Valor de Kcal:</label>
+        <input type="number" id="kcalInput">
+        <label for="unitSelect">Unidade:</label>
+        <select id="unitSelect">
+            <option value="gram">Gramas</option>
+            <option value="milligram">Miligramas ou Microgramas</option>
+        </select>
+        <p>Resultado: <span id="result"></span></p>
     </div>
     <script src="script.js"></script>
 </body>
